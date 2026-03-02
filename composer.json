@@ -1,0 +1,41 @@
+{
+    "name": "romeldev/susalud-x12",
+    "description": "Librería PHP para parseo y generación de tramas X12 EDI de SUSALUD (270, 271, 278, 997)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romel Diaz",
+            "email": "rodira.codes@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Romeldev\\SusaludX12\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Romeldev\\SusaludX12\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Romeldev\\SusaludX12\\SusaludX12ServiceProvider"
+            ],
+            "aliases": {
+                "SusaludX12": "Romeldev\\SusaludX12\\Facades\\SusaludX12"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
