@@ -7,7 +7,7 @@ use InvalidArgumentException;
 /**
  * Manager principal para acceso a servicios de transacciones X12.
  */
-class RomeldevSusaludX12Manager
+class SusaludX12Manager
 {
     /** @var array */
     private $services = [];

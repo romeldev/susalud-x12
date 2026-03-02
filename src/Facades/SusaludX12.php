@@ -35,9 +35,9 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Romeldev\SusaludX12\Services\Contracts\TransactionServiceInterface service(string $name)
  * @method static array availableServices()
  *
- * @see \Romeldev\SusaludX12\Services\RomeldevSusaludX12Manager
+ * @see \Romeldev\SusaludX12\Services\SusaludX12Manager
  */
-class RomeldevSusaludX12 extends Facade
+class SusaludX12 extends Facade
 {
     protected static function getFacadeAccessor()
     {
