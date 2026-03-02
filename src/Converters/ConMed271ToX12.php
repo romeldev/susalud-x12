@@ -87,7 +87,7 @@ class ConMed271ToX12
                 $r1->generaSubTrama('82', '', $det->dePreexistencia);
                 $r1->completaLongitud();
                 $msg1 = new MsgSegment();
-                $msg1->generaSubTrama3($det->msgObsPr, 'LC', $det->idFuenteRE);
+                $msg1->generaSubTrama($det->msgObsPr, 'LC', $det->idFuenteRE);
                 $msg1->completaLongitud();
                 $eb2 = new EbSegment();
                 $eb2->generaSubTrama($det->esCobertura, '', '', '', '', $det->moDiagnostico, '', '');
