@@ -2,24 +2,26 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InSolAutProEsp271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InSolAutProEsp271Detalle extends AbstractBean
 {
     /** @var string */
-    public $coInProcedimiento = '';
+    protected $coInProcedimiento = '';
     /** @var string */
-    public $coTiProConAmbulatoria = '';
+    protected $coTiProConAmbulatoria = '';
     /** @var string */
-    public $nuPlanConAmbulatoria = '';
+    protected $nuPlanConAmbulatoria = '';
     /** @var string */
-    public $imDeducible = '';
+    protected $imDeducible = '';
     /** @var string */
-    public $poConAmbulatoria = '';
+    protected $poConAmbulatoria = '';
     /** @var string */
-    public $frConAmbulatoria = '';
+    protected $frConAmbulatoria = '';
     /** @var string */
-    public $geConAmbulatoria = '';
+    protected $geConAmbulatoria = '';
     /** @var string */
-    public $caConAmbulatoria = '';
+    protected $caConAmbulatoria = '';
     /** @var string */
-    public $msgConAmbulatoria = '';
+    protected $msgConAmbulatoria = '';
 }

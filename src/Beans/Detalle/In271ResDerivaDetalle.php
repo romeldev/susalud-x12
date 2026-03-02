@@ -2,50 +2,52 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class In271ResDerivaDetalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class In271ResDerivaDetalle extends AbstractBean
 {
     /** @var string */
-    public $caPaciente = '';
+    protected $caPaciente = '';
     /** @var string */
-    public $apPaternoPaciente = '';
+    protected $apPaternoPaciente = '';
     /** @var string */
-    public $noPaciente = '';
+    protected $noPaciente = '';
     /** @var string */
-    public $coAfPaciente = '';
+    protected $coAfPaciente = '';
     /** @var string */
-    public $apMaternoPaciente = '';
+    protected $apMaternoPaciente = '';
     /** @var string */
-    public $coTiDoPaciente = '';
+    protected $coTiDoPaciente = '';
     /** @var string */
-    public $nuDoPaciente = '';
+    protected $nuDoPaciente = '';
     /** @var string */
-    public $coParentesco = '';
+    protected $coParentesco = '';
     /** @var string */
-    public $tiDoTrabajoAfiliado = '';
+    protected $tiDoTrabajoAfiliado = '';
     /** @var string */
-    public $nuDoTrabajoAfiliado = '';
+    protected $nuDoTrabajoAfiliado = '';
     /** @var string */
-    public $nuAtencion = '';
+    protected $nuAtencion = '';
     /** @var string */
-    public $teMsgLibre1 = '';
+    protected $teMsgLibre1 = '';
     /** @var string */
-    public $coTiProducto = '';
+    protected $coTiProducto = '';
     /** @var string */
-    public $deProducto = '';
+    protected $deProducto = '';
     /** @var string */
-    public $coTiCobertura = '';
+    protected $coTiCobertura = '';
     /** @var string */
-    public $coSubTiCobertura = '';
+    protected $coSubTiCobertura = '';
     /** @var string */
-    public $feAtSalud = '';
+    protected $feAtSalud = '';
     /** @var string */
-    public $noLuAtencion = '';
+    protected $noLuAtencion = '';
     /** @var string */
-    public $coLuAtencion = '';
+    protected $coLuAtencion = '';
     /** @var string */
-    public $tiDoContratante = '';
+    protected $tiDoContratante = '';
     /** @var string */
-    public $idCaReferencia = '';
+    protected $idCaReferencia = '';
     /** @var string */
-    public $reIdContratante = '';
+    protected $reIdContratante = '';
 }

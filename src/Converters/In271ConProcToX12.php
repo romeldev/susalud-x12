@@ -129,14 +129,14 @@ class In271ConProcToX12
             $eb3 = new EbSegment(); $eb3->generaSubTrama('PE', '', '', '', '', '', '5U', ''); $eb3->completaLongitud();
             $eb3_13 = new Eb13Segment(); $eb3_13->generaSubTrama('ZZ', '', ''); $eb3_13->completaLongitud();
             $hsd1 = new HsdSegment(); $hsd1->generaSubTrama('9S', ''); $hsd1->completaLongitud();
-            $msg1 = new MsgSegment(); $msg1->generaSubTrama(''); $msg1->completaLongitud();
+            $msg1 = new MsgSegment(); $msg1->generaSubTrama1(''); $msg1->completaLongitud();
             $eb4 = new EbSegment(); $eb4->generaSubTrama('TE', '', '', '', '', '', '', ''); $eb4->completaLongitud();
             $r1 = new RefSegment(); $r1->generaSubTrama('82', '', ''); $r1->completaLongitud();
             $dtp1 = new DtpSegment(); $dtp1->generaSubTrama('327', 'D8', ''); $dtp1->completaLongitud();
-            $msg2 = new MsgSegment(); $msg2->generaSubTrama(''); $msg2->completaLongitud();
+            $msg2 = new MsgSegment(); $msg2->generaSubTrama1(''); $msg2->completaLongitud();
             $eb5 = new EbSegment(); $eb5->generaSubTrama('EC', '', '', '', '', '', '', ''); $eb5->completaLongitud();
             $r2 = new RefSegment(); $r2->generaSubTrama('82', '', ''); $r2->completaLongitud();
-            $msg3 = new MsgSegment(); $msg3->generaSubTrama(''); $msg3->completaLongitud();
+            $msg3 = new MsgSegment(); $msg3->generaSubTrama1(''); $msg3->completaLongitud();
 
             $sDetalle .= $eb1->returnComoString('EB*', '*', '~')
                 . $eb2->returnComoString('EB*', '*', '~')

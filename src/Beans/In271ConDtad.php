@@ -2,62 +2,62 @@
 
 namespace Romeldev\SusaludX12\Beans;
 
-class In271ConDtad
+class In271ConDtad extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $tiFinalidad = '';
+    protected $tiFinalidad = '';
     /** @var string */
-    public $caRemitente = '';
+    protected $caRemitente = '';
     /** @var string */
-    public $caReceptor = '';
+    protected $caReceptor = '';
     /** @var string */
-    public $nuRucReceptor = '';
+    protected $nuRucReceptor = '';
     /** @var string */
-    public $caPaciente = '';
+    protected $caPaciente = '';
     /** @var string */
-    public $apPaternoPaciente = '';
+    protected $apPaternoPaciente = '';
     /** @var string */
-    public $noPaciente = '';
+    protected $noPaciente = '';
     /** @var string */
-    public $coAfPaciente = '';
+    protected $coAfPaciente = '';
     /** @var string */
-    public $apMaternoPaciente = '';
+    protected $apMaternoPaciente = '';
     /** @var string */
-    public $deDirPaciente1 = '';
+    protected $deDirPaciente1 = '';
     /** @var string */
-    public $deDirPaciente2 = '';
+    protected $deDirPaciente2 = '';
     /** @var string */
-    public $coUbigeoPaciente = '';
+    protected $coUbigeoPaciente = '';
     /** @var string */
-    public $noContacto = '';
+    protected $noContacto = '';
     /** @var string */
-    public $emContacto = '';
+    protected $emContacto = '';
     /** @var string */
-    public $nuTeContacto = '';
+    protected $nuTeContacto = '';
     /** @var string */
-    public $tiCaCalificador = '';
+    protected $tiCaCalificador = '';
     /** @var string */
-    public $apPaNoEmCalificador = '';
+    protected $apPaNoEmCalificador = '';
     /** @var string */
-    public $noEmCalificador = '';
+    protected $noEmCalificador = '';
     /** @var string */
-    public $apMaCalificador = '';
+    protected $apMaCalificador = '';
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
 }

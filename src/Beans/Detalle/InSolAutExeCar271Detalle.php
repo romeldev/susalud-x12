@@ -2,14 +2,16 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InSolAutExeCar271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InSolAutExeCar271Detalle extends AbstractBean
 {
     /** @var string */
-    public $coExCarencia = '';
+    protected $coExCarencia = '';
     /** @var string */
-    public $idExCarencia = '';
+    protected $idExCarencia = '';
     /** @var string */
-    public $deExCarencia = '';
+    protected $deExCarencia = '';
     /** @var string */
-    public $msgExCarencia = '';
+    protected $msgExCarencia = '';
 }

@@ -4,122 +4,130 @@ namespace Romeldev\SusaludX12\Beans;
 
 use Romeldev\SusaludX12\Beans\Detalle\InConCod271Detalle;
 
-class InConCod271
+class InConCod271 extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $tiFinalidad = '';
+    protected $tiFinalidad = '';
     /** @var string */
-    public $caRemitente = '';
+    protected $caRemitente = '';
     /** @var string */
-    public $userRemitente = '';
+    protected $userRemitente = '';
     /** @var string */
-    public $passRemitente = '';
+    protected $passRemitente = '';
     /** @var string */
-    public $feUpFoto = '';
+    protected $feUpFoto = '';
     /** @var string */
-    public $caReceptor = '';
+    protected $caReceptor = '';
     /** @var string */
-    public $nuRucReceptor = '';
+    protected $nuRucReceptor = '';
     /** @var string */
-    public $caPaciente = '';
+    protected $caPaciente = '';
     /** @var string */
-    public $apPaternoPaciente = '';
+    protected $apPaternoPaciente = '';
     /** @var string */
-    public $noPaciente = '';
+    protected $noPaciente = '';
     /** @var string */
-    public $coAfPaciente = '';
+    protected $coAfPaciente = '';
     /** @var string */
-    public $apMaternoPaciente = '';
+    protected $apMaternoPaciente = '';
     /** @var string */
-    public $coEsPaciente = '';
+    protected $coEsPaciente = '';
     /** @var string */
-    public $tiDoPaciente = '';
+    protected $tiDoPaciente = '';
     /** @var string */
-    public $nuDoPaciente = '';
+    protected $nuDoPaciente = '';
     /** @var string */
-    public $nuIdenPaciente = '';
+    protected $nuIdenPaciente = '';
     /** @var string */
-    public $nuContratoPaciente = '';
+    protected $nuContratoPaciente = '';
     /** @var string */
-    public $nuPoliza = '';
+    protected $nuPoliza = '';
     /** @var string */
-    public $nuCertificado = '';
+    protected $nuCertificado = '';
     /** @var string */
-    public $coTiPoliza = '';
+    protected $coTiPoliza = '';
     /** @var string */
-    public $coProducto = '';
+    protected $coProducto = '';
     /** @var string */
-    public $deProducto = '';
+    protected $deProducto = '';
     /** @var string */
-    public $nuPlan = '';
+    protected $nuPlan = '';
     /** @var string */
-    public $tiPlanSalud = '';
+    protected $tiPlanSalud = '';
     /** @var string */
-    public $coMoneda = '';
+    protected $coMoneda = '';
     /** @var string */
-    public $coParentesco = '';
+    protected $coParentesco = '';
     /** @var string */
-    public $soBeneficio = '';
+    protected $soBeneficio = '';
     /** @var string */
-    public $nuSoBeneficio = '';
+    protected $nuSoBeneficio = '';
     /** @var string */
-    public $feNacimiento = '';
+    protected $feNacimiento = '';
     /** @var string */
-    public $genero = '';
+    protected $genero = '';
     /** @var string */
-    public $esMarital = '';
+    protected $esMarital = '';
     /** @var string */
-    public $feIniVigencia = '';
+    protected $feIniVigencia = '';
     /** @var string */
-    public $feFinVigencia = '';
+    protected $feFinVigencia = '';
     /** @var string */
-    public $tiCaContratante = '';
+    protected $tiCaContratante = '';
     /** @var string */
-    public $noPaContratante = '';
+    protected $noPaContratante = '';
     /** @var string */
-    public $noContratante = '';
+    protected $noContratante = '';
     /** @var string */
-    public $noMaContratante = '';
+    protected $noMaContratante = '';
     /** @var string */
-    public $tiDoContratante = '';
+    protected $tiDoContratante = '';
     /** @var string */
-    public $idReContratante = '';
+    protected $idReContratante = '';
     /** @var string */
-    public $coReContratante = '';
+    protected $coReContratante = '';
     /** @var string */
-    public $caTitular = '';
+    protected $caTitular = '';
     /** @var string */
-    public $noPaTitular = '';
+    protected $noPaTitular = '';
     /** @var string */
-    public $noTitular = '';
+    protected $noTitular = '';
     /** @var string */
-    public $coAfTitular = '';
+    protected $coAfTitular = '';
     /** @var string */
-    public $noMaTitular = '';
+    protected $noMaTitular = '';
     /** @var string */
-    public $tiDoTitular = '';
+    protected $tiDoTitular = '';
     /** @var string */
-    public $nuDoTitular = '';
+    protected $nuDoTitular = '';
     /** @var string */
-    public $feInsTitular = '';
+    protected $feInsTitular = '';
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
     /** @var InConCod271Detalle[] */
-    public $inConCod271Detalles = [];
+    protected $inConCod271Detalles = [];
+
+    /** @inheritdoc */
+    protected function getPropertyAliases()
+    {
+        return [
+            'detalles' => 'inConCod271Detalles',
+        ];
+    }
 }

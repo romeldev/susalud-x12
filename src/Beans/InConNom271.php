@@ -4,34 +4,42 @@ namespace Romeldev\SusaludX12\Beans;
 
 use Romeldev\SusaludX12\Beans\Detalle\InConNom271Detalle;
 
-class InConNom271
+class InConNom271 extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $tiFinalidad = '';
+    protected $tiFinalidad = '';
     /** @var string */
-    public $caRemitente = '';
+    protected $caRemitente = '';
     /** @var string */
-    public $caReceptor = '';
+    protected $caReceptor = '';
     /** @var string */
-    public $nuRucReceptor = '';
+    protected $nuRucReceptor = '';
     /** @var InConNom271Detalle[] */
-    public $inConNom271Detalles = [];
+    protected $inConNom271Detalles = [];
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
+
+    /** @inheritdoc */
+    protected function getPropertyAliases()
+    {
+        return [
+            'detalles' => 'inConNom271Detalles',
+        ];
+    }
 }

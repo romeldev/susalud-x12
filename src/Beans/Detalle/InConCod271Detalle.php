@@ -2,46 +2,48 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InConCod271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InConCod271Detalle extends AbstractBean
 {
     /** @var string */
-    public $infBeneficio = '';
+    protected $infBeneficio = '';
     /** @var string */
-    public $nuCobertura = '';
+    protected $nuCobertura = '';
     /** @var string */
-    public $beMaxInicial = '';
+    protected $beMaxInicial = '';
     /** @var string */
-    public $moCobertura = '';
+    protected $moCobertura = '';
     /** @var string */
-    public $coInRestriccion = '';
+    protected $coInRestriccion = '';
     /** @var string */
-    public $canServicio = '';
+    protected $canServicio = '';
     /** @var string */
-    public $idProducto = '';
+    protected $idProducto = '';
     /** @var string */
-    public $coTiCobertura = '';
+    protected $coTiCobertura = '';
     /** @var string */
-    public $coSubTiCobertura = '';
+    protected $coSubTiCobertura = '';
     /** @var string */
-    public $msgObs = '';
+    protected $msgObs = '';
     /** @var string */
-    public $msgConEspeciales = '';
+    protected $msgConEspeciales = '';
     /** @var string */
-    public $coTiMoneda = '';
+    protected $coTiMoneda = '';
     /** @var string */
-    public $coPagoFijo = '';
+    protected $coPagoFijo = '';
     /** @var string */
-    public $coCalServicio = '';
+    protected $coCalServicio = '';
     /** @var string */
-    public $canCalServicio = '';
+    protected $canCalServicio = '';
     /** @var string */
-    public $coPagoVariable = '';
+    protected $coPagoVariable = '';
     /** @var string */
-    public $flagCaGarantia = '';
+    protected $flagCaGarantia = '';
     /** @var string */
-    public $deflagCaGarantia = '';
+    protected $deflagCaGarantia = '';
     /** @var string */
-    public $feFinCarencia = '';
+    protected $feFinCarencia = '';
     /** @var string */
-    public $feFinEspera = '';
+    protected $feFinEspera = '';
 }

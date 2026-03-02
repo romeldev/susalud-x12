@@ -2,22 +2,24 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InConMed271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InConMed271Detalle extends AbstractBean
 {
     /** @var string */
-    public $coSeCIE10 = '';
+    protected $coSeCIE10 = '';
     /** @var string */
-    public $coRestriccion = '';
+    protected $coRestriccion = '';
     /** @var string */
-    public $dePreexistencia = '';
+    protected $dePreexistencia = '';
     /** @var string */
-    public $msgObsPr = '';
+    protected $msgObsPr = '';
     /** @var string */
-    public $idFuenteRE = '';
+    protected $idFuenteRE = '';
     /** @var string */
-    public $esCobertura = '';
+    protected $esCobertura = '';
     /** @var string */
-    public $moDiagnostico = '';
+    protected $moDiagnostico = '';
     /** @var string */
-    public $tiEspera = '';
+    protected $tiEspera = '';
 }

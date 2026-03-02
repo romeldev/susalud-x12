@@ -2,96 +2,96 @@
 
 namespace Romeldev\SusaludX12\Beans;
 
-class InConAse270
+class InConAse270 extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $tiFinalidad = '';
+    protected $tiFinalidad = '';
     /** @var string */
-    public $caRemitente = '';
+    protected $caRemitente = '';
     /** @var string */
-    public $nuRucRemitente = '';
+    protected $nuRucRemitente = '';
     /** @var string */
-    public $txRequest = '';
+    protected $txRequest = '';
     /** @var string */
-    public $caReceptor = '';
+    protected $caReceptor = '';
     /** @var string */
-    public $caPaciente = '';
+    protected $caPaciente = '';
     /** @var string */
-    public $apPaternoPaciente = '';
+    protected $apPaternoPaciente = '';
     /** @var string */
-    public $noPaciente = '';
+    protected $noPaciente = '';
     /** @var string */
-    public $coAfPaciente = '';
+    protected $coAfPaciente = '';
     /** @var string */
-    public $apMaternoPaciente = '';
+    protected $apMaternoPaciente = '';
     /** @var string */
-    public $tiDocumento = '';
+    protected $tiDocumento = '';
     /** @var string */
-    public $nuDocumento = '';
+    protected $nuDocumento = '';
     /** @var string */
-    public $coProducto = '';
+    protected $coProducto = '';
     /** @var string */
-    public $deProducto = '';
+    protected $deProducto = '';
     /** @var string */
-    public $coInProducto = '';
+    protected $coInProducto = '';
     /** @var string */
-    public $nuCobertura = '';
+    protected $nuCobertura = '';
     /** @var string */
-    public $deCobertura = '';
+    protected $deCobertura = '';
     /** @var string */
-    public $caServicio = '';
+    protected $caServicio = '';
     /** @var string */
-    public $coCalservicio = '';
+    protected $coCalservicio = '';
     /** @var string */
-    public $beMaxInicial = '';
+    protected $beMaxInicial = '';
     /** @var string */
-    public $coTiCobertura = '';
+    protected $coTiCobertura = '';
     /** @var string */
-    public $coSuTiCobertura = '';
+    protected $coSuTiCobertura = '';
     /** @var string */
-    public $coAplicativoTx = '';
+    protected $coAplicativoTx = '';
     /** @var string */
-    public $coEspecialidad = '';
+    protected $coEspecialidad = '';
     /** @var string */
-    public $coParentesco = '';
+    protected $coParentesco = '';
     /** @var string */
-    public $nuPlan = '';
+    protected $nuPlan = '';
     /** @var string */
-    public $nuAutOrigen = '';
+    protected $nuAutOrigen = '';
     /** @var string */
-    public $tiAccidente = '';
+    protected $tiAccidente = '';
     /** @var string */
-    public $feAccidente = '';
+    protected $feAccidente = '';
     /** @var string */
-    public $tiCaContratante = '';
+    protected $tiCaContratante = '';
     /** @var string */
-    public $noPaContratante = '';
+    protected $noPaContratante = '';
     /** @var string */
-    public $noContratante = '';
+    protected $noContratante = '';
     /** @var string */
-    public $noMaContratante = '';
+    protected $noMaContratante = '';
     /** @var string */
-    public $tiDoContratante = '';
+    protected $tiDoContratante = '';
     /** @var string */
-    public $idReContratante = '';
+    protected $idReContratante = '';
     /** @var string */
-    public $coReContratante = '';
+    protected $coReContratante = '';
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
 }

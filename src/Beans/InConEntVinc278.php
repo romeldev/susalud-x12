@@ -2,34 +2,34 @@
 
 namespace Romeldev\SusaludX12\Beans;
 
-class InConEntVinc278
+class InConEntVinc278 extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $tiFinalidad = '';
+    protected $tiFinalidad = '';
     /** @var string */
-    public $caIPRESS = '';
+    protected $caIPRESS = '';
     /** @var string */
-    public $noIPRESS = '';
+    protected $noIPRESS = '';
     /** @var string */
-    public $tiDoIPRESS = '';
+    protected $tiDoIPRESS = '';
     /** @var string */
-    public $nuRucIPRESS = '';
+    protected $nuRucIPRESS = '';
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
 }

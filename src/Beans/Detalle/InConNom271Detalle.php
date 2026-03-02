@@ -2,54 +2,56 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InConNom271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InConNom271Detalle extends AbstractBean
 {
     /** @var string */
-    public $caPaciente = '';
+    protected $caPaciente = '';
     /** @var string */
-    public $apPaternoPaciente = '';
+    protected $apPaternoPaciente = '';
     /** @var string */
-    public $noPaciente = '';
+    protected $noPaciente = '';
     /** @var string */
-    public $coAfPaciente = '';
+    protected $coAfPaciente = '';
     /** @var string */
-    public $apMaternoPaciente = '';
+    protected $apMaternoPaciente = '';
     /** @var string */
-    public $coEsPaciente = '';
+    protected $coEsPaciente = '';
     /** @var string */
-    public $tiDoPaciente = '';
+    protected $tiDoPaciente = '';
     /** @var string */
-    public $nuDoPaciente = '';
+    protected $nuDoPaciente = '';
     /** @var string */
-    public $nuContratoPaciente = '';
+    protected $nuContratoPaciente = '';
     /** @var string */
-    public $coProducto = '';
+    protected $coProducto = '';
     /** @var string */
-    public $coDescripcion = '';
+    protected $coDescripcion = '';
     /** @var string */
-    public $nuSCTR = '';
+    protected $nuSCTR = '';
     /** @var string */
-    public $coParentesco = '';
+    protected $coParentesco = '';
     /** @var string */
-    public $nuPlan = '';
+    protected $nuPlan = '';
     /** @var string */
-    public $feNacimiento = '';
+    protected $feNacimiento = '';
     /** @var string */
-    public $genero = '';
+    protected $genero = '';
     /** @var string */
-    public $esMarital = '';
+    protected $esMarital = '';
     /** @var string */
-    public $tiCaContratante = '';
+    protected $tiCaContratante = '';
     /** @var string */
-    public $noPaContratante = '';
+    protected $noPaContratante = '';
     /** @var string */
-    public $noContratante = '';
+    protected $noContratante = '';
     /** @var string */
-    public $noMaContratante = '';
+    protected $noMaContratante = '';
     /** @var string */
-    public $tiDoContratante = '';
+    protected $tiDoContratante = '';
     /** @var string */
-    public $idReContratante = '';
+    protected $idReContratante = '';
     /** @var string */
-    public $coReContratante = '';
+    protected $coReContratante = '';
 }

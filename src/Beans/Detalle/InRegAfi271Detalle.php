@@ -2,94 +2,96 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InRegAfi271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InRegAfi271Detalle extends AbstractBean
 {
     /** @var string */
-    public $caPaciente = '';
+    protected $caPaciente = '';
     /** @var string */
-    public $apPaternoPaciente = '';
+    protected $apPaternoPaciente = '';
     /** @var string */
-    public $noPaciente = '';
+    protected $noPaciente = '';
     /** @var string */
-    public $coPaciente = '';
+    protected $coPaciente = '';
     /** @var string */
-    public $apMaternoPaciente = '';
+    protected $apMaternoPaciente = '';
     /** @var string */
-    public $tiDocumentoPaciente = '';
+    protected $tiDocumentoPaciente = '';
     /** @var string */
-    public $nuDocumentoPaciente = '';
+    protected $nuDocumentoPaciente = '';
     /** @var string */
-    public $coContratoPaciente = '';
+    protected $coContratoPaciente = '';
     /** @var string */
-    public $esPaciente = '';
+    protected $esPaciente = '';
     /** @var string */
-    public $tiRegimenPaciente = '';
+    protected $tiRegimenPaciente = '';
     /** @var string */
-    public $tiPlanPaciente = '';
+    protected $tiPlanPaciente = '';
     /** @var string */
-    public $coProductoPaciente = '';
+    protected $coProductoPaciente = '';
     /** @var string */
-    public $coPlanPaciente = '';
+    protected $coPlanPaciente = '';
     /** @var string */
-    public $nuCarnetPaciente = '';
+    protected $nuCarnetPaciente = '';
     /** @var string */
-    public $coVinculoFamPaciente = '';
+    protected $coVinculoFamPaciente = '';
     /** @var string */
-    public $apCasadaPaciente = '';
+    protected $apCasadaPaciente = '';
     /** @var string */
-    public $deUbigeoPaciente = '';
+    protected $deUbigeoPaciente = '';
     /** @var string */
-    public $feNacePaciente = '';
+    protected $feNacePaciente = '';
     /** @var string */
-    public $gePaciente = '';
+    protected $gePaciente = '';
     /** @var string */
-    public $coPaisPaciente = '';
+    protected $coPaisPaciente = '';
     /** @var string */
-    public $feFallecidoPaciente = '';
+    protected $feFallecidoPaciente = '';
     /** @var string */
-    public $feIniAfiliaPaciente = '';
+    protected $feIniAfiliaPaciente = '';
     /** @var string */
-    public $feFinAfiliaPaciente = '';
+    protected $feFinAfiliaPaciente = '';
     /** @var string */
-    public $feFinAtencionPaciente = '';
+    protected $feFinAtencionPaciente = '';
     /** @var string */
-    public $caAseguradora = '';
+    protected $caAseguradora = '';
     /** @var string */
-    public $coAseguradora = '';
+    protected $coAseguradora = '';
     /** @var string */
-    public $caTitular = '';
+    protected $caTitular = '';
     /** @var string */
-    public $apPaternoTitular = '';
+    protected $apPaternoTitular = '';
     /** @var string */
-    public $noTitular = '';
+    protected $noTitular = '';
     /** @var string */
-    public $coTitular = '';
+    protected $coTitular = '';
     /** @var string */
-    public $apMaternoTitular = '';
+    protected $apMaternoTitular = '';
     /** @var string */
-    public $tiDocumentoTitular = '';
+    protected $tiDocumentoTitular = '';
     /** @var string */
-    public $nuDocumentoTitular = '';
+    protected $nuDocumentoTitular = '';
     /** @var string */
-    public $coEstablecimientoTitular = '';
+    protected $coEstablecimientoTitular = '';
     /** @var string */
-    public $feFallecidoTitular = '';
+    protected $feFallecidoTitular = '';
     /** @var string */
-    public $coPaisTitular = '';
+    protected $coPaisTitular = '';
     /** @var string */
-    public $caContratante = '';
+    protected $caContratante = '';
     /** @var string */
-    public $apPaternoContratante = '';
+    protected $apPaternoContratante = '';
     /** @var string */
-    public $noContratante = '';
+    protected $noContratante = '';
     /** @var string */
-    public $apMaternoContratante = '';
+    protected $apMaternoContratante = '';
     /** @var string */
-    public $tiDocumentoContratante = '';
+    protected $tiDocumentoContratante = '';
     /** @var string */
-    public $idReContratante = '';
+    protected $idReContratante = '';
     /** @var string */
-    public $nuDocumentoContratante = '';
+    protected $nuDocumentoContratante = '';
     /** @var string */
-    public $coPaisContratante = '';
+    protected $coPaisContratante = '';
 }

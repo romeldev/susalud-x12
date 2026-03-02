@@ -2,32 +2,32 @@
 
 namespace Romeldev\SusaludX12\Beans;
 
-class In997ResAut
+class In997ResAut extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $nuAutorizacion = '';
+    protected $nuAutorizacion = '';
     /** @var string */
-    public $coSeguridad = '';
+    protected $coSeguridad = '';
     /** @var string */
-    public $coError = '';
+    protected $coError = '';
     /** @var string */
-    public $inCoErrorEncontrado = '';
+    protected $inCoErrorEncontrado = '';
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
 }

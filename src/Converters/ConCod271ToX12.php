@@ -82,8 +82,8 @@ class ConCod271ToX12
             $eb2_13 = new Eb13Segment(); $eb2_13->generaSubTrama('ZZ', $hasData ? $det->idProducto : '', ''); $eb2_13->completaLongitud();
             $r12 = new RefSegment(); $r12->generaSubTrama2('D7', $hasData ? $det->coTiCobertura : ''); $r12->completaLongitud();
             $r12_4 = new Ref4Segment(); $r12_4->generaSubTrama2('ZZ', $hasData ? $det->coSubTiCobertura : ''); $r12_4->completaLongitud();
-            $msg1 = new MsgSegment(); $msg1->generaSubTrama($hasData ? $det->msgObs : ''); $msg1->completaLongitud();
-            $msg2 = new MsgSegment(); $msg2->generaSubTrama($hasData ? $det->msgConEspeciales : ''); $msg2->completaLongitud();
+            $msg1 = new MsgSegment(); $msg1->generaSubTrama1($hasData ? $det->msgObs : ''); $msg1->completaLongitud();
+            $msg2 = new MsgSegment(); $msg2->generaSubTrama1($hasData ? $det->msgConEspeciales : ''); $msg2->completaLongitud();
             $eb3 = new EbSegment(); $eb3->generaSubTrama('C', '', '', $hasData ? $det->coTiMoneda : '', $hasData ? $det->coPagoFijo : '', '', $hasData ? $det->coCalServicio : '', $hasData ? $det->canCalServicio : ''); $eb3->completaLongitud();
             $eb4 = new EbSegment(); $eb4->generaSubTrama('1', '', '', '', '', $hasData ? $det->coPagoVariable : '', '', ''); $eb4->completaLongitud();
             $eb5 = new EbSegment(); $eb5->generaSubTrama($hasData ? $det->flagCaGarantia : '', '', '', $hasData ? $det->deflagCaGarantia : '', '', '', '', ''); $eb5->completaLongitud();

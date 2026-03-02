@@ -2,16 +2,18 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InSolAutTieEsp271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InSolAutTieEsp271Detalle extends AbstractBean
 {
     /** @var string */
-    public $coTiEspera = '';
+    protected $coTiEspera = '';
     /** @var string */
-    public $idTiEspera = '';
+    protected $idTiEspera = '';
     /** @var string */
-    public $deTiEspera = '';
+    protected $deTiEspera = '';
     /** @var string */
-    public $feFinVigenciaTiEspera = '';
+    protected $feFinVigenciaTiEspera = '';
     /** @var string */
-    public $msgTiEspera = '';
+    protected $msgTiEspera = '';
 }

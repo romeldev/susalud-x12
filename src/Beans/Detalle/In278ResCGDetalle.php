@@ -2,60 +2,62 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class In278ResCGDetalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class In278ResCGDetalle extends AbstractBean
 {
     /** @var string */
-    public $caPaciente = '';
+    protected $caPaciente = '';
     /** @var string */
-    public $apPaternoPaciente = '';
+    protected $apPaternoPaciente = '';
     /** @var string */
-    public $noPaciente = '';
+    protected $noPaciente = '';
     /** @var string */
-    public $coAfPaciente = '';
+    protected $coAfPaciente = '';
     /** @var string */
-    public $apMaternoPaciente = '';
+    protected $apMaternoPaciente = '';
     /** @var string */
-    public $coTiDoPaciente = '';
+    protected $coTiDoPaciente = '';
     /** @var string */
-    public $nuDoPaciente = '';
+    protected $nuDoPaciente = '';
     /** @var string */
-    public $monPago = '';
+    protected $monPago = '';
     /** @var string */
-    public $tiCaContratante = '';
+    protected $tiCaContratante = '';
     /** @var string */
-    public $noPaContratante = '';
+    protected $noPaContratante = '';
     /** @var string */
-    public $noContratante = '';
+    protected $noContratante = '';
     /** @var string */
-    public $noMaContratante = '';
+    protected $noMaContratante = '';
     /** @var string */
-    public $tiDoContratante = '';
+    protected $tiDoContratante = '';
     /** @var string */
-    public $idCaReContratante = '';
+    protected $idCaReContratante = '';
     /** @var string */
-    public $nuCaReContratante = '';
+    protected $nuCaReContratante = '';
     /** @var string */
-    public $deCarGarantia = '';
+    protected $deCarGarantia = '';
     /** @var string */
-    public $nuSoCarGarantia = '';
+    protected $nuSoCarGarantia = '';
     /** @var string */
-    public $nuCarGarantia = '';
+    protected $nuCarGarantia = '';
     /** @var string */
-    public $veCarGarantia = '';
+    protected $veCarGarantia = '';
     /** @var string */
-    public $esCarGarantia = '';
+    protected $esCarGarantia = '';
     /** @var string */
-    public $coProducto = '';
+    protected $coProducto = '';
     /** @var string */
-    public $coProcedimiento = '';
+    protected $coProcedimiento = '';
     /** @var string */
-    public $deProcedimiento = '';
+    protected $deProcedimiento = '';
     /** @var string */
-    public $nuPlan = '';
+    protected $nuPlan = '';
     /** @var string */
-    public $tiPlanSalud = '';
+    protected $tiPlanSalud = '';
     /** @var string */
-    public $coMoneda = '';
+    protected $coMoneda = '';
     /** @var string */
-    public $feCarGarantia = '';
+    protected $feCarGarantia = '';
 }

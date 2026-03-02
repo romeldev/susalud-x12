@@ -2,20 +2,22 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InSolAutRes271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InSolAutRes271Detalle extends AbstractBean
 {
     /** @var string */
-    public $CIE10Restricciones = '';
+    protected $CIE10Restricciones = '';
     /** @var string */
-    public $idRestricciones = '';
+    protected $idRestricciones = '';
     /** @var string */
-    public $obsRestricciones = '';
+    protected $obsRestricciones = '';
     /** @var string */
-    public $deRestricciones = '';
+    protected $deRestricciones = '';
     /** @var string */
-    public $msgRestricciones = '';
+    protected $msgRestricciones = '';
     /** @var string */
-    public $monTopeRestricciones = '';
+    protected $monTopeRestricciones = '';
     /** @var string */
-    public $feFinEsperaRestricciones = '';
+    protected $feFinEsperaRestricciones = '';
 }

@@ -4,34 +4,42 @@ namespace Romeldev\SusaludX12\Beans;
 
 use Romeldev\SusaludX12\Beans\Detalle\In278ResCGDetalle;
 
-class In278ResCG
+class In278ResCG extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $tiFinalidad = '';
+    protected $tiFinalidad = '';
     /** @var string */
-    public $caRemitente = '';
+    protected $caRemitente = '';
     /** @var string */
-    public $caReceptor = '';
+    protected $caReceptor = '';
     /** @var string */
-    public $nuRucReceptor = '';
+    protected $nuRucReceptor = '';
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
     /** @var In278ResCGDetalle[] */
-    public $in278ResCGDetalles = [];
+    protected $in278ResCGDetalles = [];
+
+    /** @inheritdoc */
+    protected function getPropertyAliases()
+    {
+        return [
+            'detalles' => 'in278ResCGDetalles',
+        ];
+    }
 }

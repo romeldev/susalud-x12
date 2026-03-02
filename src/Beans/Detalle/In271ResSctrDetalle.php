@@ -2,34 +2,36 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class In271ResSctrDetalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class In271ResSctrDetalle extends AbstractBean
 {
     /** @var string */
-    public $tiCaContratante = '';
+    protected $tiCaContratante = '';
     /** @var string */
-    public $noEmApPaContratante = '';
+    protected $noEmApPaContratante = '';
     /** @var string */
-    public $coEmContratante = '';
+    protected $coEmContratante = '';
     /** @var string */
-    public $idCaReContratante = '';
+    protected $idCaReContratante = '';
     /** @var string */
-    public $reIdContratante = '';
+    protected $reIdContratante = '';
     /** @var string */
-    public $tiCaLuAtencion = '';
+    protected $tiCaLuAtencion = '';
     /** @var string */
-    public $noEmLuAtencion = '';
+    protected $noEmLuAtencion = '';
     /** @var string */
-    public $coEmReLuAtencion = '';
+    protected $coEmReLuAtencion = '';
     /** @var string */
-    public $idCaReLuAtencion = '';
+    protected $idCaReLuAtencion = '';
     /** @var string */
-    public $reIdLuAtencion = '';
+    protected $reIdLuAtencion = '';
     /** @var string */
-    public $coLuAtencion = '';
+    protected $coLuAtencion = '';
     /** @var string */
-    public $deTiAccidente = '';
+    protected $deTiAccidente = '';
     /** @var string */
-    public $feAfiliacion = '';
+    protected $feAfiliacion = '';
     /** @var string */
-    public $feOcAccidente = '';
+    protected $feOcAccidente = '';
 }

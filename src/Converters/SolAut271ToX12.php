@@ -74,8 +74,8 @@ class SolAut271ToX12
         $dtp5 = new DtpSegment(); $dtp5->generaSubTrama('382', 'D8', $inSolAut->feAtencion); $dtp5->completaLongitud();
         $eb3 = new EbSegment(); $eb3->generaSubTrama($inSolAut->esCobertura, '', '', $inSolAut->nuCobertura, '', '', '', ''); $eb3->completaLongitud();
         $eb313 = new Eb13Segment(); $eb313->generaSubTrama('ZZ', $inSolAut->obsCobertura, ''); $eb313->completaLongitud();
-        $msg1 = new MsgSegment(); $msg1->generaSubTrama($inSolAut->msgObs); $msg1->completaLongitud();
-        $msg2 = new MsgSegment(); $msg2->generaSubTrama($inSolAut->msgConEspeciales); $msg2->completaLongitud();
+        $msg1 = new MsgSegment(); $msg1->generaSubTrama1($inSolAut->msgObs); $msg1->completaLongitud();
+        $msg2 = new MsgSegment(); $msg2->generaSubTrama1($inSolAut->msgConEspeciales); $msg2->completaLongitud();
         $nm14 = new Nm1Segment(); $nm14->generaSubTrama('P5', $inSolAut->caContratante, $inSolAut->noPaContratante, $inSolAut->noContratante, '', '', $inSolAut->noMaContratante); $nm14->completaLongitud();
         $r12 = new RefSegment(); $r12->generaSubTrama('DD', $inSolAut->tiDoContratante, ''); $r12->completaLongitud();
         $r12_4 = new Ref4Segment(); $r12_4->generaSubTrama2($inSolAut->idReContratante, $inSolAut->coReContratante); $r12_4->completaLongitud();
@@ -87,8 +87,8 @@ class SolAut271ToX12
         $eb413 = new Eb13Segment(); $eb413->generaSubTrama('ZZ', $inSolAut->idDeProducto, ''); $eb413->completaLongitud();
         $r14 = new RefSegment(); $r14->generaSubTrama2('D7', $inSolAut->coTiCobertura); $r14->completaLongitud();
         $r14_4 = new Ref4Segment(); $r14_4->generaSubTrama2('ZZ', $inSolAut->coSubTiCobertura); $r14_4->completaLongitud();
-        $msg3 = new MsgSegment(); $msg3->generaSubTrama($inSolAut->msgObsPre); $msg3->completaLongitud();
-        $msg4 = new MsgSegment(); $msg4->generaSubTrama($inSolAut->msgConEspecialesPre); $msg4->completaLongitud();
+        $msg3 = new MsgSegment(); $msg3->generaSubTrama1($inSolAut->msgObsPre); $msg3->completaLongitud();
+        $msg4 = new MsgSegment(); $msg4->generaSubTrama1($inSolAut->msgConEspecialesPre); $msg4->completaLongitud();
         $eb5 = new EbSegment(); $eb5->generaSubTrama('C', '', '', $inSolAut->coTiMoneda, $inSolAut->coPagoFijo, '', $inSolAut->coCalServicio, $inSolAut->canCalServicio); $eb5->completaLongitud();
         $eb6 = new EbSegment(); $eb6->generaSubTrama($inSolAut->esCobertura, '', '', '', '', $inSolAut->coPagoVariable, '', ''); $eb6->completaLongitud();
         $eb7 = new EbSegment(); $eb7->generaSubTrama($inSolAut->flagCG, '', '', $inSolAut->deflagCG, '', '', '', ''); $eb7->completaLongitud();
@@ -103,7 +103,7 @@ class SolAut271ToX12
                 $eb9 = new EbSegment(); $eb9->generaSubTrama('P', '', $det->coTiProConAmbulatoria, $det->nuPlanConAmbulatoria, $det->imDeducible, $det->poConAmbulatoria, '5U', $det->frConAmbulatoria); $eb9->completaLongitud();
                 $eb9_13 = new Eb13Segment(); $eb9_13->generaSubTrama('ZZ', $det->geConAmbulatoria, ''); $eb9_13->completaLongitud();
                 $hsd1 = new HsdSegment(); $hsd1->generaSubTrama('9S', $det->caConAmbulatoria); $hsd1->completaLongitud();
-                $msg5 = new MsgSegment(); $msg5->generaSubTrama($det->msgConAmbulatoria); $msg5->completaLongitud();
+                $msg5 = new MsgSegment(); $msg5->generaSubTrama1($det->msgConAmbulatoria); $msg5->completaLongitud();
                 $sDetallePE .= $eb8->returnComoString('EB*', '*', '~') . $eb9->returnComoString('EB*', '*', '*' . $eb9_13->returnComoString('', ':', '~')) . $hsd1->returnComoString('HSD*', '*', '~') . $msg5->returnComoString('MSG*', '*', '~');
             }
         } else {
@@ -111,7 +111,7 @@ class SolAut271ToX12
             $eb9 = new EbSegment(); $eb9->generaSubTrama('P', '', '', '', '', '', '5U', ''); $eb9->completaLongitud();
             $eb9_13 = new Eb13Segment(); $eb9_13->generaSubTrama('ZZ', '', ''); $eb9_13->completaLongitud();
             $hsd1 = new HsdSegment(); $hsd1->generaSubTrama('9S', ''); $hsd1->completaLongitud();
-            $msg5 = new MsgSegment(); $msg5->generaSubTrama(''); $msg5->completaLongitud();
+            $msg5 = new MsgSegment(); $msg5->generaSubTrama1(''); $msg5->completaLongitud();
             $sDetallePE .= $eb8->returnComoString('EB*', '*', '~') . $eb9->returnComoString('EB*', '*', '*' . $eb9_13->returnComoString('', ':', '~')) . $hsd1->returnComoString('HSD*', '*', '~') . $msg5->returnComoString('MSG*', '*', '~');
         }
 
@@ -123,7 +123,7 @@ class SolAut271ToX12
                 $eb10_13 = new Eb13Segment(); $eb10_13->generaSubTrama('ZZ', $det->idTiEspera, ''); $eb10_13->completaLongitud();
                 $r15 = new RefSegment(); $r15->generaSubTrama2('82', $det->deTiEspera); $r15->completaLongitud();
                 $dtp9 = new DtpSegment(); $dtp9->generaSubTrama('150', 'D8', $det->feFinVigenciaTiEspera); $dtp9->completaLongitud();
-                $msg6 = new MsgSegment(); $msg6->generaSubTrama($det->msgTiEspera); $msg6->completaLongitud();
+                $msg6 = new MsgSegment(); $msg6->generaSubTrama1($det->msgTiEspera); $msg6->completaLongitud();
                 $sDetalleTE .= $eb10->returnComoString('EB*', '*', '*' . $eb10_13->returnComoString('', ':', '~')) . $r15->returnComoString('REF*', '*', '~') . $dtp9->returnComoString('DTP*', '*', '~') . $msg6->returnComoString('MSG*', '*', '~');
             }
         } else {
@@ -131,7 +131,7 @@ class SolAut271ToX12
             $eb10_13 = new Eb13Segment(); $eb10_13->generaSubTrama('ZZ', '', ''); $eb10_13->completaLongitud();
             $r15 = new RefSegment(); $r15->generaSubTrama2('82', ''); $r15->completaLongitud();
             $dtp9 = new DtpSegment(); $dtp9->generaSubTrama('150', 'D8', ''); $dtp9->completaLongitud();
-            $msg6 = new MsgSegment(); $msg6->generaSubTrama(''); $msg6->completaLongitud();
+            $msg6 = new MsgSegment(); $msg6->generaSubTrama1(''); $msg6->completaLongitud();
             $sDetalleTE .= $eb10->returnComoString('EB*', '*', '*' . $eb10_13->returnComoString('', ':', '~')) . $r15->returnComoString('REF*', '*', '~') . $dtp9->returnComoString('DTP*', '*', '~') . $msg6->returnComoString('MSG*', '*', '~');
         }
 
@@ -142,14 +142,14 @@ class SolAut271ToX12
                 $eb11 = new EbSegment(); $eb11->generaSubTrama('W', '', $det->coExCarencia, '', '', '', '', ''); $eb11->completaLongitud();
                 $eb11_13 = new Eb13Segment(); $eb11_13->generaSubTrama('ZZ', $det->idExCarencia, ''); $eb11_13->completaLongitud();
                 $r16 = new RefSegment(); $r16->generaSubTrama2('82', $det->deExCarencia); $r16->completaLongitud();
-                $msg7 = new MsgSegment(); $msg7->generaSubTrama($det->msgExCarencia); $msg7->completaLongitud();
+                $msg7 = new MsgSegment(); $msg7->generaSubTrama1($det->msgExCarencia); $msg7->completaLongitud();
                 $sDetalleEC .= $eb11->returnComoString('EB*', '*', '*' . $eb11_13->returnComoString('', ':', '~')) . $r16->returnComoString('REF*', '*', '~') . $msg7->returnComoString('MSG*', '*', '~');
             }
         } else {
             $eb11 = new EbSegment(); $eb11->generaSubTrama('W', '', '', '', '', '', '', ''); $eb11->completaLongitud();
             $eb11_13 = new Eb13Segment(); $eb11_13->generaSubTrama('ZZ', '', ''); $eb11_13->completaLongitud();
             $r16 = new RefSegment(); $r16->generaSubTrama2('82', ''); $r16->completaLongitud();
-            $msg7 = new MsgSegment(); $msg7->generaSubTrama(''); $msg7->completaLongitud();
+            $msg7 = new MsgSegment(); $msg7->generaSubTrama1(''); $msg7->completaLongitud();
             $sDetalleEC .= $eb11->returnComoString('EB*', '*', '*' . $eb11_13->returnComoString('', ':', '~')) . $r16->returnComoString('REF*', '*', '~') . $msg7->returnComoString('MSG*', '*', '~');
         }
 
@@ -164,7 +164,7 @@ class SolAut271ToX12
                 $eb12_13 = new Eb13Segment(); $eb12_13->generaSubTrama('ZZ', $det->idRestricciones, ''); $eb12_13->completaLongitud();
                 $r17 = new RefSegment(); $r17->generaSubTrama2('82', $det->obsRestricciones); $r17->completaLongitud();
                 $r18 = new RefSegment(); $r18->generaSubTrama2('82', $det->deRestricciones); $r18->completaLongitud();
-                $msg8 = new MsgSegment(); $msg8->generaSubTrama($det->msgRestricciones); $msg8->completaLongitud();
+                $msg8 = new MsgSegment(); $msg8->generaSubTrama1($det->msgRestricciones); $msg8->completaLongitud();
                 $eb13x = new EbSegment(); $eb13x->generaSubTrama($inSolAut->esCobertura, '', '', '', '', $det->monTopeRestricciones, '', ''); $eb13x->completaLongitud();
                 $dtp10 = new DtpSegment(); $dtp10->generaSubTrama('150', 'D8', $det->feFinEsperaRestricciones); $dtp10->completaLongitud();
                 $sDetalle .= $eb12->returnComoString('EB*', '*', '*' . $eb12_13->returnComoString('', ':', '~')) . $r17->returnComoString('REF*', '*', '~') . $r18->returnComoString('REF*', '*', '~') . $msg8->returnComoString('MSG*', '*', '~') . $eb13x->returnComoString('EB*', '*', '~') . $dtp10->returnComoString('DTP*', '*', '~');
@@ -174,7 +174,7 @@ class SolAut271ToX12
             $eb12_13 = new Eb13Segment(); $eb12_13->generaSubTrama('ZZ', '', ''); $eb12_13->completaLongitud();
             $r17 = new RefSegment(); $r17->generaSubTrama2('82', ''); $r17->completaLongitud();
             $r18 = new RefSegment(); $r18->generaSubTrama2('82', ''); $r18->completaLongitud();
-            $msg8 = new MsgSegment(); $msg8->generaSubTrama(''); $msg8->completaLongitud();
+            $msg8 = new MsgSegment(); $msg8->generaSubTrama1(''); $msg8->completaLongitud();
             $eb13x = new EbSegment(); $eb13x->generaSubTrama('', '', '', '', '', '', '', ''); $eb13x->completaLongitud();
             $dtp10 = new DtpSegment(); $dtp10->generaSubTrama('150', 'D8', ''); $dtp10->completaLongitud();
             $sDetalle .= $eb12->returnComoString('EB*', '*', '*' . $eb12_13->returnComoString('', ':', '~')) . $r17->returnComoString('REF*', '*', '~') . $r18->returnComoString('REF*', '*', '~') . $msg8->returnComoString('MSG*', '*', '~') . $eb13x->returnComoString('EB*', '*', '~') . $dtp10->returnComoString('DTP*', '*', '~');

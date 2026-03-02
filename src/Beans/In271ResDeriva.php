@@ -4,34 +4,42 @@ namespace Romeldev\SusaludX12\Beans;
 
 use Romeldev\SusaludX12\Beans\Detalle\In271ResDerivaDetalle;
 
-class In271ResDeriva
+class In271ResDeriva extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $tiFinalidad = '';
+    protected $tiFinalidad = '';
     /** @var string */
-    public $caRemitente = '';
+    protected $caRemitente = '';
     /** @var string */
-    public $caReceptor = '';
+    protected $caReceptor = '';
     /** @var string */
-    public $nuRucReceptor = '';
+    protected $nuRucReceptor = '';
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
     /** @var In271ResDerivaDetalle[] */
-    public $in271ResDerivaDetalles = [];
+    protected $in271ResDerivaDetalles = [];
+
+    /** @inheritdoc */
+    protected function getPropertyAliases()
+    {
+        return [
+            'detalles' => 'in271ResDerivaDetalles',
+        ];
+    }
 }

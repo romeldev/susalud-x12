@@ -2,44 +2,46 @@
 
 namespace Romeldev\SusaludX12\Beans\Detalle;
 
-class InConProc271Detalle
+
+use Romeldev\SusaludX12\Beans\AbstractBean;
+class InConProc271Detalle extends AbstractBean
 {
     /** @var string */
-    public $coInProcedimiento = '';
+    protected $coInProcedimiento = '';
     /** @var string */
-    public $coInRestriccion = '';
+    protected $coInRestriccion = '';
     /** @var string */
-    public $coProcedimiento = '';
+    protected $coProcedimiento = '';
     /** @var string */
-    public $imDeducible = '';
+    protected $imDeducible = '';
     /** @var string */
-    public $poCuExDecimal = '';
+    protected $poCuExDecimal = '';
     /** @var string */
-    public $nuFrecuencia = '';
+    protected $nuFrecuencia = '';
     /** @var string */
-    public $coSexo = '';
+    protected $coSexo = '';
     /** @var string */
-    public $tiNuDias = '';
+    protected $tiNuDias = '';
     /** @var string */
-    public $teMsgObservacion = '';
+    protected $teMsgObservacion = '';
     /** @var string */
-    public $idFuentePE = '';
+    protected $idFuentePE = '';
     /** @var string */
-    public $coTiEspera = '';
+    protected $coTiEspera = '';
     /** @var string */
-    public $deTiEspera = '';
+    protected $deTiEspera = '';
     /** @var string */
-    public $feFinVigencia = '';
+    protected $feFinVigencia = '';
     /** @var string */
-    public $teMsgTiEspera = '';
+    protected $teMsgTiEspera = '';
     /** @var string */
-    public $idFuenteTE = '';
+    protected $idFuenteTE = '';
     /** @var string */
-    public $coExCarencia = '';
+    protected $coExCarencia = '';
     /** @var string */
-    public $deExCarencia = '';
+    protected $deExCarencia = '';
     /** @var string */
-    public $teMsgExCarencia = '';
+    protected $teMsgExCarencia = '';
     /** @var string */
-    public $idFuenteEC = '';
+    protected $idFuenteEC = '';
 }

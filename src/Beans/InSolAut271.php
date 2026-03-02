@@ -7,214 +7,231 @@ use Romeldev\SusaludX12\Beans\Detalle\InSolAutProEsp271Detalle;
 use Romeldev\SusaludX12\Beans\Detalle\InSolAutRes271Detalle;
 use Romeldev\SusaludX12\Beans\Detalle\InSolAutTieEsp271Detalle;
 
-class InSolAut271
+class InSolAut271 extends AbstractBean
 {
     /** @var string */
-    public $noTransaccion = '';
+    protected $noTransaccion = '';
     /** @var string */
-    public $idRemitente = '';
+    protected $idRemitente = '';
     /** @var string */
-    public $idReceptor = '';
+    protected $idReceptor = '';
     /** @var string */
-    public $feTransaccion = '';
+    protected $feTransaccion = '';
     /** @var string */
-    public $hoTransaccion = '';
+    protected $hoTransaccion = '';
     /** @var string */
-    public $idCorrelativo = '';
+    protected $idCorrelativo = '';
     /** @var string */
-    public $idTransaccion = '';
+    protected $idTransaccion = '';
     /** @var string */
-    public $tiFinalidad = '';
+    protected $tiFinalidad = '';
     /** @var string */
-    public $caRemitente = '';
+    protected $caRemitente = '';
     /** @var string */
-    public $nuRucRemitente = '';
+    protected $nuRucRemitente = '';
     /** @var string */
-    public $caReceptor = '';
+    protected $caReceptor = '';
     /** @var string */
-    public $coAdmisionista = '';
+    protected $coAdmisionista = '';
     /** @var string */
-    public $caPaciente = '';
+    protected $caPaciente = '';
     /** @var string */
-    public $apPaternoPaciente = '';
+    protected $apPaternoPaciente = '';
     /** @var string */
-    public $noPaciente = '';
+    protected $noPaciente = '';
     /** @var string */
-    public $coAfPaciente = '';
+    protected $coAfPaciente = '';
     /** @var string */
-    public $apMaternoPaciente = '';
+    protected $apMaternoPaciente = '';
     /** @var string */
-    public $coEsPaciente = '';
+    protected $coEsPaciente = '';
     /** @var string */
-    public $tiDoPaciente = '';
+    protected $tiDoPaciente = '';
     /** @var string */
-    public $nuDoPaciente = '';
+    protected $nuDoPaciente = '';
     /** @var string */
-    public $nuIdenEmpleador = '';
+    protected $nuIdenEmpleador = '';
     /** @var string */
-    public $nuContratoPaciente = '';
+    protected $nuContratoPaciente = '';
     /** @var string */
-    public $nuPoliza = '';
+    protected $nuPoliza = '';
     /** @var string */
-    public $nuCertificado = '';
+    protected $nuCertificado = '';
     /** @var string */
-    public $coTiPolizaAfiliacion = '';
+    protected $coTiPolizaAfiliacion = '';
     /** @var string */
-    public $coProducto = '';
+    protected $coProducto = '';
     /** @var string */
-    public $deProducto = '';
+    protected $deProducto = '';
     /** @var string */
-    public $nuPlan = '';
+    protected $nuPlan = '';
     /** @var string */
-    public $tiPlanSalud = '';
+    protected $tiPlanSalud = '';
     /** @var string */
-    public $coMoneda = '';
+    protected $coMoneda = '';
     /** @var string */
-    public $coParentesco = '';
+    protected $coParentesco = '';
     /** @var string */
-    public $soBeneficio = '';
+    protected $soBeneficio = '';
     /** @var string */
-    public $nuSoBeneficio = '';
+    protected $nuSoBeneficio = '';
     /** @var string */
-    public $coEspecialidad = '';
+    protected $coEspecialidad = '';
     /** @var string */
-    public $feNacimiento = '';
+    protected $feNacimiento = '';
     /** @var string */
-    public $genero = '';
+    protected $genero = '';
     /** @var string */
-    public $esMarital = '';
+    protected $esMarital = '';
     /** @var string */
-    public $feIniVigencia = '';
+    protected $feIniVigencia = '';
     /** @var string */
-    public $feFinVigencia = '';
+    protected $feFinVigencia = '';
     /** @var string */
-    public $esCobertura = '';
+    protected $esCobertura = '';
     /** @var string */
-    public $nuDecAccidente = '';
+    protected $nuDecAccidente = '';
     /** @var string */
-    public $idInfAccidente = '';
+    protected $idInfAccidente = '';
     /** @var string */
-    public $deTiAccidente = '';
+    protected $deTiAccidente = '';
     /** @var string */
-    public $feAfiliacion = '';
+    protected $feAfiliacion = '';
     /** @var string */
-    public $feOcuAccidente = '';
+    protected $feOcuAccidente = '';
     /** @var string */
-    public $nuAtencion = '';
+    protected $nuAtencion = '';
     /** @var string */
-    public $idDerFarmacia = '';
+    protected $idDerFarmacia = '';
     /** @var string */
-    public $tiProducto = '';
+    protected $tiProducto = '';
     /** @var string */
-    public $deProductoDeFarmacia = '';
+    protected $deProductoDeFarmacia = '';
     /** @var string */
-    public $feAtencion = '';
+    protected $feAtencion = '';
     /** @var string */
-    public $nuCobertura = '';
+    protected $nuCobertura = '';
     /** @var string */
-    public $obsCobertura = '';
+    protected $obsCobertura = '';
     /** @var string */
-    public $msgObs = '';
+    protected $msgObs = '';
     /** @var string */
-    public $msgConEspeciales = '';
+    protected $msgConEspeciales = '';
     /** @var string */
-    public $caContratante = '';
+    protected $caContratante = '';
     /** @var string */
-    public $noPaContratante = '';
+    protected $noPaContratante = '';
     /** @var string */
-    public $noContratante = '';
+    protected $noContratante = '';
     /** @var string */
-    public $noMaContratante = '';
+    protected $noMaContratante = '';
     /** @var string */
-    public $tiDoContratante = '';
+    protected $tiDoContratante = '';
     /** @var string */
-    public $idReContratante = '';
+    protected $idReContratante = '';
     /** @var string */
-    public $coReContratante = '';
+    protected $coReContratante = '';
     /** @var string */
-    public $caTitular = '';
+    protected $caTitular = '';
     /** @var string */
-    public $noPaTitular = '';
+    protected $noPaTitular = '';
     /** @var string */
-    public $noTitular = '';
+    protected $noTitular = '';
     /** @var string */
-    public $coAfTitular = '';
+    protected $coAfTitular = '';
     /** @var string */
-    public $noMaTitular = '';
+    protected $noMaTitular = '';
     /** @var string */
-    public $tiDoTitular = '';
+    protected $tiDoTitular = '';
     /** @var string */
-    public $idReTitular = '';
+    protected $idReTitular = '';
     /** @var string */
-    public $nuDoTitular = '';
+    protected $nuDoTitular = '';
     /** @var string */
-    public $feIncTitular = '';
+    protected $feIncTitular = '';
     /** @var string */
-    public $nuCobPreExistencia = '';
+    protected $nuCobPreExistencia = '';
     /** @var string */
-    public $beMaxInicial = '';
+    protected $beMaxInicial = '';
     /** @var string */
-    public $canServicio = '';
+    protected $canServicio = '';
     /** @var string */
-    public $idDeProducto = '';
+    protected $idDeProducto = '';
     /** @var string */
-    public $coTiCobertura = '';
+    protected $coTiCobertura = '';
     /** @var string */
-    public $coSubTiCobertura = '';
+    protected $coSubTiCobertura = '';
     /** @var string */
-    public $msgObsPre = '';
+    protected $msgObsPre = '';
     /** @var string */
-    public $msgConEspecialesPre = '';
+    protected $msgConEspecialesPre = '';
     /** @var string */
-    public $coTiMoneda = '';
+    protected $coTiMoneda = '';
     /** @var string */
-    public $coPagoFijo = '';
+    protected $coPagoFijo = '';
     /** @var string */
-    public $coCalServicio = '';
+    protected $coCalServicio = '';
     /** @var string */
-    public $canCalServicio = '';
+    protected $canCalServicio = '';
     /** @var string */
-    public $coPagoVariable = '';
+    protected $coPagoVariable = '';
     /** @var string */
-    public $flagCG = '';
+    protected $flagCG = '';
     /** @var string */
-    public $deflagCG = '';
+    protected $deflagCG = '';
     /** @var string */
-    public $feFinCarencia = '';
+    protected $feFinCarencia = '';
     /** @var string */
-    public $feFinEspera = '';
+    protected $feFinEspera = '';
     /** @var InSolAutProEsp271Detalle[] */
-    public $inSolAutProEsp271Detalle = [];
+    protected $inSolAutProEsp271Detalle = [];
     /** @var InSolAutTieEsp271Detalle[] */
-    public $inSolAutTieEsp271Detalle = [];
+    protected $inSolAutTieEsp271Detalle = [];
     /** @var InSolAutExeCar271Detalle[] */
-    public $inSolAutExeCar271Detalle = [];
+    protected $inSolAutExeCar271Detalle = [];
     /** @var InSolAutRes271Detalle[] */
-    public $inSolAut271Detalle = [];
+    protected $inSolAut271Detalle = [];
     /** @var string */
-    public $caRegafi = '';
+    protected $caRegafi = '';
     /** @var string */
-    public $noPaRegafi = '';
+    protected $noPaRegafi = '';
     /** @var string */
-    public $noRegafi = '';
+    protected $noRegafi = '';
     /** @var string */
-    public $coAfRegafi = '';
+    protected $coAfRegafi = '';
     /** @var string */
-    public $noMaRegafi = '';
+    protected $noMaRegafi = '';
     /** @var string */
-    public $tiDoRegafi = '';
+    protected $tiDoRegafi = '';
     /** @var string */
-    public $idReRegafi = '';
+    protected $idReRegafi = '';
     /** @var string */
-    public $nuDoRegafi = '';
+    protected $nuDoRegafi = '';
     /** @var string */
-    public $feNaRegafi = '';
+    protected $feNaRegafi = '';
     /** @var string */
-    public $geRegafi = '';
+    protected $geRegafi = '';
     /** @var string */
-    public $coPaisRegafi = '';
+    protected $coPaisRegafi = '';
     /** @var string */
-    public $nuControl = '';
+    protected $nuControl = '';
     /** @var string */
-    public $nuControlST = '';
+    protected $nuControlST = '';
+
+    /** @inheritdoc */
+    protected function getPropertyAliases()
+    {
+        return [
+            // Aliases cortos (Java: getDetalles(), getDetallesPE(), etc.)
+            'detalles' => 'inSolAut271Detalle',
+            'detallesPE' => 'inSolAutProEsp271Detalle',
+            'detallesTE' => 'inSolAutTieEsp271Detalle',
+            'detallesEC' => 'inSolAutExeCar271Detalle',
+            // Aliases plurales (Java: getInSolAut271Detalles(), etc.)
+            'inSolAut271Detalles' => 'inSolAut271Detalle',
+            'inSolAutProEsp271Detalles' => 'inSolAutProEsp271Detalle',
+            'inSolAutTieEsp271Detalles' => 'inSolAutTieEsp271Detalle',
+            'inSolAutExeCar271Detalles' => 'inSolAutExeCar271Detalle',
+        ];
+    }
 }
