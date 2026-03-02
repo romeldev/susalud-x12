@@ -30,7 +30,7 @@ class RefSegment extends AbstractSegment
      * @param string $sParam3
      * @return void
      */
-    public function generaSubTrama($sParam1, $sParam2, $sParam3)
+    public function generaSubTrama($sParam1 = '', $sParam2 = '', $sParam3 = '')
     {
         $this->campoSubTrama[0]->contenido = $sParam1;
         $this->campoSubTrama[1]->contenido = $sParam2;

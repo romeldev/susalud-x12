@@ -35,7 +35,7 @@ class PerSegment extends AbstractSegment
      * @param string $sParameter5
      * @return void
      */
-    public function generaSubTrama($sParameter1, $sParameter2, $sParameter3, $sParameter4, $sParameter5)
+    public function generaSubTrama($sParameter1 = '', $sParameter2 = '', $sParameter3 = '', $sParameter4 = '', $sParameter5 = '')
     {
         $this->campoSubTrama[0]->contenido = $sParameter1;
         $this->campoSubTrama[2]->contenido = $sParameter2;

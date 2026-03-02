@@ -44,7 +44,7 @@ class GsSegment extends AbstractSegment
      * @param string $sNuControl
      * @return void
      */
-    public function generaSubTrama($sTiTx, $sIdRemitente, $sIdReceptor, $sFeTransaccion, $sHoTransaccion, $sNuControl)
+    public function generaSubTrama($sTiTx = '', $sIdRemitente = '', $sIdReceptor = '', $sFeTransaccion = '', $sHoTransaccion = '', $sNuControl = '')
     {
         $this->campoSubTrama[0]->contenido = $sTiTx;
         $this->campoSubTrama[1]->contenido = $sIdRemitente;

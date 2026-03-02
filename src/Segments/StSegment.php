@@ -28,7 +28,7 @@ class StSegment extends AbstractSegment
      * @param string $sCantArray
      * @return void
      */
-    public function generaSubTrama($sIdTransaccion, $sNuControl, $sCantArray)
+    public function generaSubTrama($sIdTransaccion = '', $sNuControl = '', $sCantArray = '')
     {
         $this->campoSubTrama[0]->contenido = $sIdTransaccion;
         $this->campoSubTrama[1]->contenido = $sNuControl;

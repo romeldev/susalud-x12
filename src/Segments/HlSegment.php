@@ -34,7 +34,7 @@ class HlSegment extends AbstractSegment
      * @param string $sCoIndicaSegmentos
      * @return void
      */
-    public function generaSubTrama($sNuJerarquico, $sNuPadreJerarquico, $sCoJerarquico, $sCoIndicaSegmentos)
+    public function generaSubTrama($sNuJerarquico = '', $sNuPadreJerarquico = '', $sCoJerarquico = '', $sCoIndicaSegmentos = '')
     {
         $this->campoSubTrama[0]->contenido = $sNuJerarquico;
         $this->campoSubTrama[1]->contenido = $sNuPadreJerarquico;

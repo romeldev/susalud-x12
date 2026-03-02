@@ -28,7 +28,7 @@ class MsgSegment extends AbstractSegment
      * @param string $terParametro
      * @return void
      */
-    public function generaSubTrama($priParametro, $segParametro, $terParametro)
+    public function generaSubTrama($priParametro = '', $segParametro = '', $terParametro = '')
     {
         $this->campoSubTrama[0]->contenido = $priParametro;
         $this->campoSubTrama[1]->contenido = $segParametro;

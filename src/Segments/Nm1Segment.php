@@ -64,7 +64,7 @@ class Nm1Segment extends AbstractSegment
      * @param string $sApMaterno
      * @return void
      */
-    public function generaSubTrama($sCoIdentificador, $sTiCalificador, $sApPaterno, $sNombres, $coIdentificacion, $coAfiliado, $sApMaterno)
+    public function generaSubTrama($sCoIdentificador = '', $sTiCalificador = '', $sApPaterno = '', $sNombres = '', $coIdentificacion = '', $coAfiliado = '', $sApMaterno = '')
     {
         $this->campoSubTrama[0]->contenido  = $sCoIdentificador;
         $this->campoSubTrama[1]->contenido  = $sTiCalificador;
